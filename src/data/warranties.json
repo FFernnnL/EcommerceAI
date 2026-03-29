@@ -1,0 +1,47 @@
+[
+  {
+    "serialNumber": "SN-X1-A1234",
+    "productSku": "LP-X1-2024",
+    "productName": "Laptop Pro X1",
+    "purchaseDate": "2024-06-15",
+    "warrantyExpiry": "2026-06-15",
+    "coverageType": "Standard",
+    "status": "Active"
+  },
+  {
+    "serialNumber": "SN-Z5-B5678",
+    "productSku": "WE-Z5-2024",
+    "productName": "Wireless Earbuds Z5",
+    "purchaseDate": "2023-01-10",
+    "warrantyExpiry": "2025-01-10",
+    "coverageType": "Standard",
+    "status": "Expired"
+  },
+  {
+    "serialNumber": "SN-S3-C9012",
+    "productSku": "SW-S3-2024",
+    "productName": "Smart Watch S3",
+    "purchaseDate": "2024-11-01",
+    "warrantyExpiry": "2026-11-01",
+    "coverageType": "Extended",
+    "status": "Active"
+  },
+  {
+    "serialNumber": "SN-U27-D3456",
+    "productSku": "MN-U27-2024",
+    "productName": "4K Monitor U27",
+    "purchaseDate": "2024-08-20",
+    "warrantyExpiry": "2026-08-20",
+    "coverageType": "Standard",
+    "status": "Active"
+  },
+  {
+    "serialNumber": "SN-K7-E7890",
+    "productSku": "KB-K7-2024",
+    "productName": "Mechanical Keyboard K7",
+    "purchaseDate": "2024-03-01",
+    "warrantyExpiry": "2026-03-01",
+    "coverageType": "Standard",
+    "status": "Active"
+  }
+]

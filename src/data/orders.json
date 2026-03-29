@@ -1,0 +1,82 @@
+[
+  {
+    "orderId": "ORD-2024-1001",
+    "email": "john@example.com",
+    "items": [
+      { "sku": "LP-X1-2024", "name": "Laptop Pro X1", "quantity": 1, "price": 1299.99 }
+    ],
+    "status": "Delivered",
+    "trackingNumber": "TN-88001",
+    "orderDate": "2024-11-15",
+    "estimatedDelivery": "2024-11-22",
+    "shippingAddress": "123 Oak Street, San Francisco, CA 94102, US",
+    "total": 1299.99
+  },
+  {
+    "orderId": "ORD-2024-1002",
+    "email": "sarah@example.com",
+    "items": [
+      { "sku": "WE-Z5-2024", "name": "Wireless Earbuds Z5", "quantity": 2, "price": 149.99 }
+    ],
+    "status": "Shipped",
+    "trackingNumber": "TN-88002",
+    "orderDate": "2024-12-01",
+    "estimatedDelivery": "2024-12-08",
+    "shippingAddress": "456 Maple Ave, London, UK SW1A 1AA",
+    "total": 299.98
+  },
+  {
+    "orderId": "ORD-2024-1003",
+    "email": "mike@example.com",
+    "items": [
+      { "sku": "SW-S3-2024", "name": "Smart Watch S3", "quantity": 1, "price": 299.99 }
+    ],
+    "status": "Processing",
+    "trackingNumber": null,
+    "orderDate": "2024-12-10",
+    "estimatedDelivery": "2024-12-18",
+    "shippingAddress": "789 Pine Rd, Sydney, NSW 2000, Australia",
+    "total": 299.99
+  },
+  {
+    "orderId": "ORD-2024-1004",
+    "email": "john@example.com",
+    "items": [
+      { "sku": "MN-U27-2024", "name": "4K Monitor U27", "quantity": 1, "price": 449.99 },
+      { "sku": "KB-K7-2024", "name": "Mechanical Keyboard K7", "quantity": 1, "price": 129.99 }
+    ],
+    "status": "Shipped",
+    "trackingNumber": "TN-88004",
+    "orderDate": "2024-12-05",
+    "estimatedDelivery": "2024-12-12",
+    "shippingAddress": "123 Oak Street, San Francisco, CA 94102, US",
+    "total": 579.98
+  },
+  {
+    "orderId": "ORD-2024-1005",
+    "email": "emma@example.com",
+    "items": [
+      { "sku": "KB-K7-2024", "name": "Mechanical Keyboard K7", "quantity": 1, "price": 129.99 }
+    ],
+    "status": "Cancelled",
+    "trackingNumber": null,
+    "orderDate": "2024-12-03",
+    "estimatedDelivery": null,
+    "shippingAddress": "321 Elm St, Toronto, ON M5V 1J2, Canada",
+    "total": 129.99
+  },
+  {
+    "orderId": "ORD-2024-1006",
+    "email": "alex@example.com",
+    "items": [
+      { "sku": "PS-M8-2024", "name": "Portable Speaker M8", "quantity": 1, "price": 89.99 },
+      { "sku": "WE-Z5-2024", "name": "Wireless Earbuds Z5", "quantity": 1, "price": 149.99 }
+    ],
+    "status": "Delivered",
+    "trackingNumber": "TN-88006",
+    "orderDate": "2024-11-20",
+    "estimatedDelivery": "2024-11-27",
+    "shippingAddress": "55 Berliner Str, Berlin 10115, Germany",
+    "total": 239.98
+  }
+]

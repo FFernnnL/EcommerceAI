@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ts-laptop-no-power",
+    "category": "troubleshooting",
+    "title": "Laptop Pro X1 - Won't Turn On / No Power",
+    "keywords": ["laptop", "x1", "power", "turn on", "boot", "dead", "screen", "black", "charge"],
+    "content": "## Laptop Pro X1 - Won't Turn On\n\n**Step 1: Check Power Supply**\n- Ensure the 140W USB-C charger is firmly connected to both the laptop and power outlet.\n- Try a different power outlet.\n- Check if the charging LED (near the USB-C port) lights up when plugged in.\n\n**Step 2: Perform a Hard Reset**\n- Disconnect the charger and all peripherals.\n- Press and hold the power button for 15 seconds.\n- Reconnect the charger and try powering on.\n\n**Step 3: Check Display**\n- Connect an external monitor via HDMI or Thunderbolt to rule out a display issue.\n- If the external monitor works, the internal display may need service.\n\n**Step 4: Battery Reset**\n- If the laptop has been fully drained, plug in the charger and wait 15 minutes before attempting to power on.\n\n**If none of the above works:** The device may have a hardware issue. Please contact support for a warranty claim or repair. Serial number will be needed.",
+    "relatedProductSku": "LP-X1-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-earbuds-bluetooth",
+    "category": "troubleshooting",
+    "title": "Wireless Earbuds Z5 - Bluetooth Connection Issues",
+    "keywords": ["earbuds", "z5", "bluetooth", "connect", "pair", "disconnect", "drop", "audio", "sync"],
+    "content": "## Wireless Earbuds Z5 - Bluetooth Connection Issues\n\n**Step 1: Reset Bluetooth Pairing**\n- Place both earbuds in the charging case.\n- Press and hold the button on the case for 10 seconds until the LED flashes red then white.\n- The earbuds are now in pairing mode. Remove them and pair again from your device's Bluetooth settings.\n\n**Step 2: Clear Device Pairing List**\n- In the TechNova Audio app, go to Settings > Bluetooth > Clear Pairing List.\n- This removes all previously connected devices and allows fresh pairing.\n\n**Step 3: Check Bluetooth Interference**\n- Move away from Wi-Fi routers, microwaves, or other Bluetooth devices.\n- Ensure your phone/device Bluetooth is on and discoverable.\n\n**Step 4: Update Firmware**\n- Open the TechNova Audio app and check for firmware updates.\n- Outdated firmware can cause connection stability issues.\n\n**Step 5: Check Multipoint**\n- If connected to 2 devices simultaneously, audio may route to the wrong device. Disconnect one device to test.\n\n**If issues persist:** Try the earbuds with a different device. If the problem continues, contact support.",
+    "relatedProductSku": "WE-Z5-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-earbuds-charging",
+    "category": "troubleshooting",
+    "title": "Wireless Earbuds Z5 - Not Charging",
+    "keywords": ["earbuds", "z5", "charge", "charging", "battery", "case", "dead", "power", "led"],
+    "content": "## Wireless Earbuds Z5 - Not Charging\n\n**Step 1: Clean Charging Contacts**\n- Remove the earbuds and clean the gold charging pins inside the case with a dry cotton swab.\n- Also clean the contacts on the earbuds themselves.\n\n**Step 2: Check the Charging Case**\n- Connect the case to a USB-C charger. The case LED should pulse while charging.\n- If no LED, try a different cable and power adapter.\n\n**Step 3: Reset the Earbuds**\n- Place earbuds in case, press and hold the case button for 15 seconds.\n- The LEDs will flash rapidly, then turn off. This performs a full reset.\n\n**Step 4: Check Earbud Placement**\n- Ensure earbuds are seated properly in the case (you should feel a magnetic click).\n- The LED should briefly flash when each earbud is placed correctly.\n\n**Red Flashing LED:** Indicates a hardware fault with the charging circuit. This is covered under warranty.",
+    "relatedProductSku": "WE-Z5-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-watch-charging",
+    "category": "troubleshooting",
+    "title": "Smart Watch S3 - Not Charging",
+    "keywords": ["watch", "s3", "charge", "charging", "battery", "magnetic", "dead"],
+    "content": "## Smart Watch S3 - Not Charging\n\n**Step 1: Check Charging Cradle**\n- Ensure the magnetic charging cradle is properly aligned with the back of the watch.\n- The watch should snap into place magnetically.\n\n**Step 2: Clean Contacts**\n- Clean the charging contacts on the back of the watch with a dry, lint-free cloth.\n- Remove any sweat, dirt, or residue.\n\n**Step 3: Try Different Power Source**\n- Use a different USB-A port or power adapter (5V/1A minimum).\n- Avoid high-power fast chargers that exceed 5V/2A.\n\n**Step 4: Restart the Watch**\n- Press and hold the side button for 10 seconds until you see the TechNova logo.\n\n**Step 5: Check for Overheating**\n- If the watch is hot, let it cool down before charging. Charging is disabled above 45C for safety.\n\n**If none of the above works:** The charging coil may be defective. Contact support for warranty service.",
+    "relatedProductSku": "SW-S3-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-monitor-no-signal",
+    "category": "troubleshooting",
+    "title": "4K Monitor U27 - No Signal / Black Screen",
+    "keywords": ["monitor", "u27", "signal", "black", "screen", "display", "hdmi", "displayport", "usb-c", "no input"],
+    "content": "## 4K Monitor U27 - No Signal\n\n**Step 1: Check Cable Connection**\n- Ensure the video cable (DisplayPort, HDMI, or USB-C) is firmly connected at both ends.\n- Try a different cable if available.\n\n**Step 2: Select Correct Input**\n- Press the joystick button on the back of the monitor to open the OSD menu.\n- Navigate to Input Source and select the correct input (DP, HDMI1, HDMI2, or USB-C).\n\n**Step 3: Check Cable Type for 4K 144Hz**\n- 4K at 144Hz requires DisplayPort 1.4 cable or HDMI 2.1 cable.\n- Older cables may not support the full resolution/refresh rate.\n- USB-C requires the cable to support DisplayPort Alt Mode.\n\n**Step 4: Update Graphics Drivers**\n- Ensure your GPU drivers are up to date (NVIDIA/AMD/Intel).\n\n**Step 5: Test with Another Device**\n- Connect a different computer or laptop to rule out a source issue.\n\n**Step 6: Factory Reset**\n- In the OSD menu, go to Settings > Reset All to restore default settings.\n\n**Monitor power LED is off:** Check the power cable and press the power button on the bottom of the monitor.",
+    "relatedProductSku": "MN-U27-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-keyboard-not-connecting",
+    "category": "troubleshooting",
+    "title": "Mechanical Keyboard K7 - Wireless Not Connecting",
+    "keywords": ["keyboard", "k7", "wireless", "bluetooth", "connect", "pair", "dongle", "2.4ghz"],
+    "content": "## Mechanical Keyboard K7 - Wireless Not Connecting\n\n**For Bluetooth:**\n1. Press Fn + 1/2/3 to select a Bluetooth channel.\n2. Press and hold Fn + 1/2/3 for 3 seconds until the corresponding LED blinks rapidly.\n3. The keyboard is now in pairing mode. Find \"TechNova K7\" in your device's Bluetooth settings.\n\n**For 2.4GHz:**\n1. Plug the 2.4GHz USB dongle into your computer.\n2. Press Fn + 4 to switch to 2.4GHz mode.\n3. The connection should be automatic. If not, press and hold Fn + 4 for 3 seconds to re-pair.\n\n**General Troubleshooting:**\n- Ensure the keyboard is charged (check by pressing Fn + Space, LED bar shows battery level).\n- Toggle the power switch on the back of the keyboard OFF then ON.\n- Keep the keyboard within 10m of the receiver (Bluetooth) or 1m for initial 2.4GHz pairing.\n- Remove other wireless devices that may cause interference.\n\n**Factory Reset:**\n- Press and hold Fn + Esc for 5 seconds. All LEDs will flash. This clears all Bluetooth pairings and restores default key mappings.",
+    "relatedProductSku": "KB-K7-2024",
+    "priority": 9
+  },
+  {
+    "id": "ts-speaker-no-sound",
+    "category": "troubleshooting",
+    "title": "Portable Speaker M8 - No Sound",
+    "keywords": ["speaker", "m8", "sound", "audio", "volume", "mute", "play"],
+    "content": "## Portable Speaker M8 - No Sound\n\n**Step 1: Check Volume**\n- Press the volume up button on the speaker. A tone plays at each volume increment.\n- Also check the volume on your connected device.\n\n**Step 2: Verify Bluetooth Connection**\n- Check your phone/device shows \"TechNova M8\" as connected.\n- Try playing audio from a different app.\n\n**Step 3: Re-pair the Speaker**\n- Press and hold the Bluetooth button for 5 seconds until you hear \"pairing mode.\"\n- Forget \"TechNova M8\" from your device's Bluetooth list and pair again.\n\n**Step 4: Check for Speaker Blockage**\n- Ensure the speaker grille is not blocked by dirt or debris.\n- If the speaker was submerged in water, shake gently to remove water from the grille and let it dry.\n\n**Step 5: Reset the Speaker**\n- Press and hold the Power + Volume Down buttons simultaneously for 10 seconds.\n\n**Distorted Sound:** This usually occurs at very high volume. Lower the volume slightly. If distortion persists at all volumes, contact support.",
+    "relatedProductSku": "PS-M8-2024",
+    "priority": 9
+  }
+]

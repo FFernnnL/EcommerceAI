@@ -1,0 +1,56 @@
+[
+  {
+    "id": "spec-laptop-pro-x1",
+    "category": "product_spec",
+    "title": "Laptop Pro X1 - Full Specifications",
+    "keywords": ["laptop", "x1", "specs", "processor", "ram", "ssd", "display", "4k", "intel", "i9", "rtx", "thunderbolt"],
+    "content": "## Laptop Pro X1 Specifications\n\n**Processor:** Intel Core i9-14900H (14 cores, 20 threads, up to 5.8GHz)\n**Memory:** 32GB DDR5-5600MHz (2 SODIMM slots, upgradable to 64GB)\n**Storage:** 1TB PCIe Gen4 NVMe SSD (second M.2 slot available for expansion)\n**Display:** 15.6\" 4K OLED (3840x2160), 100% DCI-P3, 500 nits, 120Hz refresh rate\n**Graphics:** NVIDIA GeForce RTX 4060 8GB GDDR6\n**Battery:** 86Wh lithium-polymer, up to 12 hours battery life\n**OS:** Windows 11 Pro (downgrade to Windows 10 Pro available)\n**Ports:** 2x Thunderbolt 4, 1x USB-C 3.2, 2x USB-A 3.2, 1x HDMI 2.1, 1x SD card reader, 1x 3.5mm audio combo\n**Wireless:** Wi-Fi 6E (802.11ax tri-band), Bluetooth 5.3\n**Camera:** 1080p IR camera with Windows Hello facial recognition\n**Audio:** Quad speakers with Dolby Atmos, dual array microphones\n**Keyboard:** Full-size backlit keyboard with 1.5mm key travel, fingerprint reader in power button\n**Dimensions:** 355 x 237 x 17.9 mm\n**Weight:** 1.8 kg (3.97 lbs)\n**Color:** Space Gray\n**In the box:** Laptop, 140W USB-C charger, quick start guide, warranty card\n\n**5G Support:** No, the Laptop Pro X1 does not have built-in 5G connectivity. It supports Wi-Fi 6E for wireless internet.",
+    "relatedProductSku": "LP-X1-2024",
+    "priority": 8
+  },
+  {
+    "id": "spec-wireless-earbuds-z5",
+    "category": "product_spec",
+    "title": "Wireless Earbuds Z5 - Full Specifications",
+    "keywords": ["earbuds", "z5", "wireless", "bluetooth", "anc", "noise cancelling", "audio", "battery", "charging"],
+    "content": "## Wireless Earbuds Z5 Specifications\n\n**Driver:** Custom 11mm dynamic driver with titanium-coated diaphragm\n**Frequency Response:** 20Hz - 40kHz (Hi-Res Audio certified by JAS)\n**Bluetooth:** Version 5.3 with SBC, AAC, LDAC codecs\n**ANC:** Hybrid Active Noise Cancellation, up to -35dB reduction\n**Transparency Mode:** Full ambient sound passthrough with adjustable levels\n**Battery (Earbuds):** 8 hours with ANC on, 10 hours with ANC off\n**Battery (Case):** 32 hours additional charge (40 hours total)\n**Quick Charge:** 10 minutes charging = 2 hours playback\n**Charging:** USB-C wired, Qi wireless charging compatible\n**Water Resistance:** IPX5 (earbuds), IPX4 (charging case)\n**Microphones:** 6 total (3 per earbud) with AI-powered noise reduction for calls\n**Controls:** Capacitive touch with customizable gestures via app\n**Multipoint:** Connect to 2 devices simultaneously\n**Weight:** 5.2g per earbud, 48g charging case\n**Ear Tips:** 4 sizes included (XS, S, M, L) - silicone\n**Colors:** Midnight Black, Pearl White\n**In the box:** Earbuds, charging case, USB-C cable, 4 pairs of ear tips, quick start guide\n\n**Compatibility:** Works with any Bluetooth-enabled device. Companion app available for iOS and Android.",
+    "relatedProductSku": "WE-Z5-2024",
+    "priority": 8
+  },
+  {
+    "id": "spec-smart-watch-s3",
+    "category": "product_spec",
+    "title": "Smart Watch S3 - Full Specifications",
+    "keywords": ["smartwatch", "watch", "s3", "health", "fitness", "gps", "heart rate", "sleep", "waterproof"],
+    "content": "## Smart Watch S3 Specifications\n\n**Display:** 1.43\" AMOLED, 466x466 resolution, 600 nits peak brightness, Always-On Display\n**Processor:** Dual-core ARM Cortex-M33\n**Storage:** 32GB internal (for music, apps, watch faces)\n**Sensors:** Optical heart rate (PPG), SpO2 (blood oxygen), accelerometer, gyroscope, barometric altimeter, compass, ambient light, skin temperature\n**GPS:** Dual-frequency GPS, GLONASS, Galileo, BeiDou\n**Water Resistance:** 5ATM (suitable for swimming up to 50m depth)\n**Battery:** 410mAh, up to 7 days typical use, 14 days battery saver mode\n**Charging:** Magnetic wireless charging, 0-100% in approximately 2 hours\n**Connectivity:** Bluetooth 5.2, Wi-Fi 802.11 b/g/n, NFC for contactless payments\n**Sport Modes:** 100+ modes with auto-detection for walking, running, cycling, swimming\n**Health Features:** 24/7 heart rate monitoring, SpO2, stress tracking, sleep analysis (REM, deep, light), menstrual cycle tracking, body temperature monitoring\n**Smart Features:** Notifications, quick replies, music control, camera remote, weather, alarms, timers, find my phone\n**Compatibility:** iOS 14+ / Android 8+\n**Strap:** 22mm quick-release, silicone (additional leather and metal straps sold separately)\n**Dimensions:** 46.5 x 46.5 x 11mm\n**Weight:** 37g without strap\n**Colors:** Graphite Black, Silver, Rose Gold",
+    "relatedProductSku": "SW-S3-2024",
+    "priority": 8
+  },
+  {
+    "id": "spec-portable-speaker-m8",
+    "category": "product_spec",
+    "title": "Portable Speaker M8 - Full Specifications",
+    "keywords": ["speaker", "m8", "portable", "bluetooth", "waterproof", "outdoor", "bass", "battery"],
+    "content": "## Portable Speaker M8 Specifications\n\n**Drivers:** 2x 52mm full-range drivers + 2x passive bass radiators\n**Output Power:** 20W peak (10W x 2)\n**Frequency Response:** 60Hz - 20kHz\n**Bluetooth:** Version 5.3 with SBC, AAC codec support\n**Range:** Up to 30 meters (100 feet) open air\n**Battery:** 5000mAh lithium-polymer, up to 20 hours playback at 50% volume\n**Charging:** USB-C (approximately 3 hours for full charge)\n**Water Resistance:** IPX7 (submersible up to 1 meter for 30 minutes)\n**Stereo Pairing:** Yes, connect two M8 speakers for true stereo\n**Speakerphone:** Built-in microphone with echo cancellation\n**Dimensions:** 180 x 72 x 72 mm (cylindrical)\n**Weight:** 540g (1.19 lbs)\n**Materials:** Recycled plastic body, rubberized exterior, metal grille\n**Colors:** Ocean Blue, Forest Green, Sunset Orange, Charcoal Black, Sand White\n**In the box:** Speaker, USB-C cable, carabiner clip, quick start guide\n\n**Note:** Does not support Wi-Fi or voice assistants. Audio input is Bluetooth only (no AUX cable).",
+    "relatedProductSku": "PS-M8-2024",
+    "priority": 8
+  },
+  {
+    "id": "spec-4k-monitor-u27",
+    "category": "product_spec",
+    "title": "4K Monitor U27 - Full Specifications",
+    "keywords": ["monitor", "u27", "4k", "display", "144hz", "hdr", "usb-c", "ips", "gaming", "creator"],
+    "content": "## 4K Monitor U27 Specifications\n\n**Panel:** 27\" IPS (In-Plane Switching)\n**Resolution:** 3840 x 2160 (4K UHD), 163 PPI\n**Refresh Rate:** 144Hz via DisplayPort, 120Hz via HDMI\n**Response Time:** 1ms GtG (Gray to Gray)\n**HDR:** VESA DisplayHDR 600 certified\n**Brightness:** 450 nits typical, 600 nits peak (HDR)\n**Contrast:** 1000:1 native\n**Color Gamut:** 99% sRGB, 95% DCI-P3, Delta E < 2 (factory calibrated)\n**Adaptive Sync:** AMD FreeSync Premium Pro, NVIDIA G-Sync Compatible\n**Ports:** 1x DisplayPort 1.4, 2x HDMI 2.1, 1x USB-C (65W Power Delivery + video + data), 4x USB-A 3.0 downstream hub, 1x 3.5mm audio out\n**KVM Switch:** Built-in, switch between two computers with one keyboard/mouse\n**PIP/PBP:** Picture-in-Picture and Picture-by-Picture support\n**Speakers:** 2x 3W built-in\n**Stand Adjustments:** Height (130mm), Tilt (-5/+20), Swivel (+-30), Pivot (90)\n**VESA Mount:** 100 x 100 mm\n**Dimensions (with stand):** 614 x 533 x 230 mm\n**Dimensions (without stand):** 614 x 365 x 55 mm\n**Weight:** 5.8 kg without stand, 8.2 kg with stand\n\n**Note:** The USB-C port supports both video output AND 65W laptop charging over a single cable.",
+    "relatedProductSku": "MN-U27-2024",
+    "priority": 8
+  },
+  {
+    "id": "spec-mechanical-keyboard-k7",
+    "category": "product_spec",
+    "title": "Mechanical Keyboard K7 - Full Specifications",
+    "keywords": ["keyboard", "k7", "mechanical", "wireless", "bluetooth", "rgb", "hot-swap", "switches", "gaming", "typing"],
+    "content": "## Mechanical Keyboard K7 Specifications\n\n**Switch:** Gateron Pro 3.0 Yellow (linear, 50g actuation, pre-lubed, hot-swappable 3/5 pin)\n**Keycaps:** PBT double-shot, Cherry profile\n**Layout:** 75% compact (82 keys), ANSI\n**Connectivity:** Bluetooth 5.1 (up to 3 devices), 2.4GHz wireless dongle, USB-C wired\n**Battery:** 4000mAh Li-Po rechargeable\n**Battery Life:** Up to 200 hours (RGB off), approximately 30 hours (RGB on at 50%)\n**Polling Rate:** 1000Hz (wired and 2.4GHz), 125Hz (Bluetooth)\n**Anti-ghosting:** N-key rollover (wired), 6-key rollover (wireless)\n**Backlight:** Per-key RGB, 16.8 million colors, 20+ preset effects, customizable via software\n**LEDs:** South-facing (no interference with Cherry-profile keycaps)\n**Mounting:** Gasket mount with silicone dampening pads and IXPE foam\n**Stabilizers:** Pre-lubed screw-in PCB-mount stabilizers\n**Knob:** Aluminum rotary encoder (volume by default, programmable)\n**Dimensions:** 332 x 145 x 33 mm (front height 22mm without feet)\n**Weight:** 820g (1.81 lbs)\n**Cable:** Detachable USB-C to USB-A braided cable (1.8m)\n**Compatibility:** Windows, macOS, Linux, iOS, Android\n**Software:** TechNova Keyboard Studio (Windows/macOS) for key remapping, macro, RGB customization\n**In the box:** Keyboard, USB-C cable, 2.4GHz dongle, keycap puller, switch puller, extra switches x3, quick start guide",
+    "relatedProductSku": "KB-K7-2024",
+    "priority": 8
+  }
+]

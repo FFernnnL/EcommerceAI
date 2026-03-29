@@ -1,0 +1,66 @@
+[
+  {
+    "id": "faq-track-order",
+    "category": "faq",
+    "title": "How do I track my order?",
+    "keywords": ["track", "order", "tracking", "where", "shipment", "status", "delivery"],
+    "content": "## How do I track my order?\n\nOnce your order has shipped, you'll receive an email with your tracking number. You can:\n1. Click the tracking link in the email to view real-time status.\n2. Use our AI assistant and provide your order ID and email to check status instantly.\n3. Log into your TechNova account and go to Order History.\n\nTracking updates may take 24-48 hours to appear after shipment.",
+    "priority": 6
+  },
+  {
+    "id": "faq-payment-methods",
+    "category": "faq",
+    "title": "What payment methods do you accept?",
+    "keywords": ["payment", "pay", "credit card", "paypal", "apple pay", "google pay", "method"],
+    "content": "## What payment methods do you accept?\n\nTechNova accepts the following payment methods:\n- **Credit/Debit Cards:** Visa, Mastercard, American Express, Discover\n- **Digital Wallets:** PayPal, Apple Pay, Google Pay\n- **Buy Now Pay Later:** Klarna (available in US, UK, EU)\n- **Bank Transfer:** Available for orders over $500\n\nAll transactions are encrypted with 256-bit SSL. We never store your full card details.",
+    "priority": 5
+  },
+  {
+    "id": "faq-international-shipping",
+    "category": "faq",
+    "title": "Do you ship internationally?",
+    "keywords": ["international", "ship", "country", "global", "worldwide", "overseas", "customs"],
+    "content": "## Do you ship internationally?\n\nYes! We ship to 14 countries: United States, Canada, United Kingdom, Germany, France, Netherlands, Belgium, Spain, Italy, Australia, New Zealand, Japan, South Korea, and Singapore.\n\nInternational shipping rates and times vary by destination. Standard shipping is typically 5-7 business days. Please note that customs duties and import taxes may apply and are the responsibility of the customer.",
+    "priority": 5
+  },
+  {
+    "id": "faq-change-order",
+    "category": "faq",
+    "title": "Can I change or cancel my order after placing it?",
+    "keywords": ["change", "cancel", "modify", "order", "update", "address"],
+    "content": "## Can I change or cancel my order?\n\nYou can modify or cancel your order **within 1 hour** of placing it, as long as it hasn't entered processing. After that:\n- **Address changes:** Contact support immediately. If the order hasn't shipped, we can update the address.\n- **Cancellation after processing:** You'll need to wait for delivery and then initiate a return.\n- **Item changes:** Not possible once the order is placed. Please place a new order and return the original.",
+    "priority": 5
+  },
+  {
+    "id": "faq-reset-earbuds",
+    "category": "faq",
+    "title": "How do I reset my Wireless Earbuds Z5?",
+    "keywords": ["reset", "earbuds", "z5", "factory", "restore", "default"],
+    "content": "## How to Reset Wireless Earbuds Z5\n\n**Quick Reset (fixes most issues):**\n1. Place both earbuds in the charging case.\n2. Press and hold the case button for 10 seconds.\n3. LED flashes red then white. Release the button.\n4. Remove earbuds and re-pair with your device.\n\n**Full Factory Reset (erases all settings):**\n1. Place earbuds in case.\n2. Press the case button 5 times quickly, then hold for 10 seconds.\n3. All LEDs flash rapidly. The earbuds are restored to factory settings.\n4. Re-pair from scratch in your device's Bluetooth settings.",
+    "priority": 6
+  },
+  {
+    "id": "faq-warranty-check",
+    "category": "faq",
+    "title": "How do I check my warranty status?",
+    "keywords": ["warranty", "check", "status", "serial", "covered", "valid"],
+    "content": "## How to Check Warranty Status\n\nTo check your warranty status, you need your product's **serial number (SN)**. You can:\n1. Use our AI assistant - just provide your serial number and it will instantly check your warranty.\n2. Visit our website's Warranty Check page.\n3. Contact support with your serial number.\n\n**Where to find your serial number:**\n- Laptop: Bottom of the device\n- Earbuds: Inside the charging case lid\n- Smart Watch: Settings > About > Serial Number\n- Speaker: Bottom label\n- Monitor: Back of the monitor\n- Keyboard: Bottom label",
+    "priority": 6
+  },
+  {
+    "id": "faq-student-discount",
+    "category": "faq",
+    "title": "Do you offer student discounts?",
+    "keywords": ["student", "discount", "education", "school", "university", "deal"],
+    "content": "## Student Discounts\n\nYes! TechNova offers a **10% student discount** on all products. To qualify:\n1. You must have a valid .edu email address or student ID.\n2. Verify through our Student Discount page using SheerID.\n3. Once verified, you'll receive a unique discount code valid for 6 months.\n\nStudent discount cannot be combined with other promotions or sale prices.",
+    "priority": 4
+  },
+  {
+    "id": "faq-bulk-orders",
+    "category": "faq",
+    "title": "Do you offer bulk or business pricing?",
+    "keywords": ["bulk", "business", "wholesale", "corporate", "volume", "enterprise"],
+    "content": "## Bulk & Business Orders\n\nYes, we offer special pricing for bulk and business orders:\n- **5-19 units:** 5% discount\n- **20-49 units:** 10% discount\n- **50+ units:** Custom pricing (contact our business team)\n\nBusiness accounts also get:\n- Dedicated account manager\n- Net-30 payment terms (approved accounts)\n- Priority support\n\nContact business@technova.com for a custom quote.",
+    "priority": 4
+  }
+]
