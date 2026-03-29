@@ -1,2 +1,213 @@
 # EcommerceAI
-for电商海外独立站的智能客服机器人
+
+## AI 智能客服电商平台
+
+一个面向海外独立站的 AI 智能客服电商平台，集成多智能体（Multi-Agent）架构、RAG 知识检索、Function Calling 工具调用和流式对话能力。
+
+## 技术栈
+
+| 层级     | 技术                                             |
+| -------- | ------------------------------------------------ |
+| 框架     | Next.js 16 (App Router) + React 19 + TypeScript  |
+| 样式     | Tailwind CSS v4                                  |
+| AI 模型  | DeepSeek-V3.2（通过火山引擎 Volcengine Ark API） |
+| AI SDK   | OpenAI Node SDK v5                               |
+| 知识检索 | 自研 TF-IDF + 余弦相似度 RAG                     |
+| 通信协议 | Server-Sent Events (SSE) 流式传输                |
+| 包管理   | npm                                              |
+
+## 项目结构
+
+```
+src/
+├── app/                          # Next.js App Router 页面
+│   ├── api/chat/route.ts         # AI 对话 API（多智能体调度核心）
+│   ├── products/                 # 商品列表 & 详情页
+│   ├── page.tsx                  # 首页
+│   ├── layout.tsx                # 根布局
+│   └── globals.css               # 全局样式
+│
+├── components/                   # React 组件
+│   ├── chat/                     # 对话系统 UI
+│   │   ├── ChatWidget.tsx        #   悬浮按钮入口
+│   │   ├── ChatPanel.tsx         #   对话面板主体
+│   │   ├── ChatMessage.tsx       #   消息气泡（Markdown 渲染）
+│   │   ├── ChatInput.tsx         #   输入框
+│   │   └── QuickReplies.tsx      #   快捷回复按钮
+│   ├── home/                     # 首页组件（Hero、推荐、优势）
+│   ├── products/                 # 商品组件（卡片、筛选、AI 咨询按钮）
+│   └── layout/                   # 布局组件（Header、Footer）
+│
+├── hooks/
+│   └── useChat.ts                # 对话逻辑 Hook（SSE 流解析、状态管理）
+│
+├── lib/
+│   ├── ai/                       # AI 核心模块
+│   │   ├── client.ts             #   OpenAI 客户端配置
+│   │   ├── system-prompt.ts      #   各智能体 System Prompt
+│   │   ├── function-schemas.ts   #   工具函数 JSON Schema 定义
+│   │   └── function-executor.ts  #   工具函数执行路由
+│   ├── rag/                      # RAG 检索模块
+│   │   ├── retriever.ts          #   检索器（TF-IDF + 余弦相似度）
+│   │   ├── indexer.ts            #   索引构建器
+│   │   └── tokenizer.ts          #   分词 & 词干提取
+│   └── mock/                     # 模拟后端服务
+│       ├── product-service.ts    #   商品价格 & 推荐
+│       ├── order-service.ts      #   订单状态查询
+│       ├── warranty-service.ts   #   保修状态查询
+│       ├── shipping-service.ts   #   物流追踪
+│       └── return-service.ts     #   退货工单创建
+│
+├── types/                        # TypeScript 类型定义
+│   ├── chat.ts                   #   对话消息 & 意图类型
+│   ├── product.ts                #   商品接口
+│   ├── order.ts                  #   订单 & 保修类型
+│   └── knowledge.ts              #   知识库条目类型
+│
+└── data/                         # 静态数据
+    ├── products.json             #   商品目录（6 款产品）
+    ├── orders.json               #   模拟订单数据
+    ├── warranties.json           #   模拟保修数据
+    └── knowledge/                #   RAG 知识库
+        ├── product-specs.json    #     产品规格
+        ├── faq.json              #     常见问题
+        ├── troubleshooting.json  #     故障排除
+        ├── warranty-policy.json  #     保修政策
+        ├── return-policy.json    #     退换货政策
+        └── shipping-policy.json  #     物流配送政策
+```
+
+## 系统架构
+
+### 多智能体（Multi-Agent）流水线
+
+系统采用两阶段流水线设计，由 Router Agent 进行意图分类，再将请求分发给对应的专家智能体处理：
+
+```
+用户消息
+    │
+    ▼
+┌──────────────────────────────┐
+│  Stage 1: Router Agent       │
+│  意图分类（temp=0, 10 tokens）│
+│  输出: SALES / SUPPORT / GENERAL
+└──────────┬───────────────────┘
+           │
+    ┌──────┼──────┐
+    ▼      ▼      ▼
+┌───────┐┌───────┐┌─────────┐
+│ Sales ││Support││ General │
+│ Agent ││ Agent ││  Agent  │
+└───┬───┘└───┬───┘└────┬────┘
+    │        │         │
+    ▼        ▼         ▼
+  RAG +    RAG +     直接
+  工具     工具      对话
+    │        │         │
+    └────────┼─────────┘
+             ▼
+     SSE 流式响应（过滤 <think> 标签）
+             │
+             ▼
+        前端渲染（Markdown）
+```
+
+### 三类专家智能体
+
+| 智能体            | 职责                         | 可用工具                                                     | RAG 检索范围                 |
+| ----------------- | ---------------------------- | ------------------------------------------------------------ | ---------------------------- |
+| **Sales Agent**   | 商品咨询、价格查询、选购推荐 | `get_product_price`、`get_product_recommendations`           | product_spec、faq            |
+| **Support Agent** | 订单查询、保修、退货、物流   | `check_order_status`、`check_warranty_status`、`create_return_ticket`、`track_shipment` | troubleshooting、policy、faq |
+| **General Agent** | 闲聊、品牌介绍、通用问答     | 无                                                           | 无                           |
+
+### ReAct 推理
+
+每个专家智能体在 System Prompt 中被指示使用 ReAct（Reasoning + Acting）模式，通过 `<think>` 标签进行内部推理。推理过程在服务端 SSE 流中被实时过滤，不会发送给前端用户。
+
+### Function Calling 工具调用
+
+采用循环式工具调用机制（最多 5 轮迭代），智能体可根据用户需求自动选择和调用合适的工具函数：
+
+| 工具                          | 功能                      | 所属智能体 |
+| ----------------------------- | ------------------------- | ---------- |
+| `get_product_price`           | 按 SKU 查询商品价格和库存 | Sales      |
+| `get_product_recommendations` | 按场景和预算推荐商品      | Sales      |
+| `check_order_status`          | 按订单号查询订单详情      | Support    |
+| `check_warranty_status`       | 按序列号查询保修状态      | Support    |
+| `create_return_ticket`        | 创建退货/退款工单         | Support    |
+| `track_shipment`              | 按运单号追踪物流          | Support    |
+
+### RAG 知识检索
+
+自研轻量级 RAG 系统，无需外部向量数据库依赖：
+
+1. **分词（Tokenizer）**：小写化 → 停用词过滤（90+ 英文停用词） → 词干提取（-ing、-tion 等后缀）
+2. **索引（Indexer）**：首次调用时构建 TF-IDF 索引，计算词频、逆文档频率和文档范数
+3. **检索（Retriever）**：余弦相似度匹配 → 关键词增强（+0.1/tag 命中） → 按分类过滤 → 返回 Top-3 结果
+4. **注入（Prompt）**：检索结果格式化后注入专家智能体的 System Prompt
+
+### 前端对话系统
+
+- **SSE 流式传输**：实时逐字显示 AI 回复，支持请求取消（AbortController）
+- **Markdown 渲染**：使用 `react-markdown` 渲染加粗、斜体、列表、代码块等格式
+- **悬浮窗交互**：400x600px 固定尺寸对话面板，全站可用
+- **快捷回复**：预设 4 个常用问题按钮，降低用户输入成本
+- **最近 20 条消息**：保留上下文历史，提升对话连贯性
+
+## 商品目录
+
+平台内置 6 款 3C 消费电子产品：
+
+| 商品                   | SKU         | 价格      | 分类        |
+| ---------------------- | ----------- | --------- | ----------- |
+| Laptop Pro X1          | LP-X1-2024  | $1,299.99 | Laptops     |
+| Wireless Earbuds Z5    | WE-Z5-2024  | $149.99   | Audio       |
+| Smart Watch S3         | SW-S3-2024  | $299.99   | Wearables   |
+| Portable Speaker M8    | PS-M8-2024  | $79.99    | Audio       |
+| 4K Monitor U27         | MN-U27-2024 | $799.99   | Monitors    |
+| Mechanical Keyboard K7 | KB-K7-2024  | $149.99   | Accessories |
+
+## 快速开始
+
+### 环境要求
+
+- Node.js 18+
+- npm
+
+### 安装与运行
+
+```bash
+# 克隆项目
+git clone <repository-url>
+cd workflow
+
+# 安装依赖
+npm install
+
+# 配置环境变量
+cp .env.local.example .env.local
+# 编辑 .env.local，填入以下配置：
+# ARK_API_KEY=<你的火山引擎 API Key>
+# ARK_BASE_URL=https://ark.cn-beijing.volces.com/api/coding/v3
+# ARK_MODEL=DeepSeek-V3.2
+
+# 启动开发服务器
+npm run dev
+```
+
+访问 http://localhost:3000 即可使用，点击右下角悬浮按钮打开 AI 客服对话。
+
+### 构建生产版本
+
+```bash
+npm run build
+npm start
+```
+
+## 环境变量
+
+| 变量名         | 说明                  | 示例                                              |
+| -------------- | --------------------- | ------------------------------------------------- |
+| `ARK_API_KEY`  | 火山引擎 Ark API 密钥 | `sk-...`                                          |
+| `ARK_BASE_URL` | API 端点地址          | `https://ark.cn-beijing.volces.com/api/coding/v3` |
+| `ARK_MODEL`    | 使用的模型名称        | `DeepSeek-V3.2`                                   |
